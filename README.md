@@ -4,86 +4,49 @@
 
 A real-world Overall Equipment Effectiveness (OEE) analytics solution developed for a printing and packaging manufacturing environment.
 
-This project was built single-handedly to transform complex ERP and manufacturing data into a dynamic analytical solution for monitoring machine performance, production efficiency and quality.
+This project transforms production data into actionable insights for monitoring machine performance, production efficiency, downtime, wastage and overall equipment effectiveness.
 
 ---
 
 ## Project Overview
 
-This project focuses on developing a dynamic OEE monitoring and manufacturing performance analytics solution using:
+The objective of this project is to build a manufacturing analytics solution that helps management and production teams monitor:
 
-- Power BI
-- DAX
-- MySQL
-- SQL
-- ERP Data
-- Manufacturing Analytics
-
-The dashboard provides a consolidated view of manufacturing performance and allows analysis across machines, shifts, dates, operators and materials.
-
-The solution is connected to ERP data through MySQL and uses SQL queries for data extraction and DAX for dynamic business calculations.
-
----
-
-## Business Problem
-
-Before this solution was developed, the organization did not have a consolidated OEE dashboard for dynamically analysing production performance, machine efficiency and quality.
-
-Manufacturing data was available through the ERP, but extracting meaningful analytical insights required understanding a large and complex database structure.
-
-The objective was to convert this complex operational data into a practical management analytics solution.
-
----
-
-## Why This Project Was Challenging
-
-The ERP database contains 520+ tables with highly interconnected and complex manufacturing data.
-
-The major challenge was not simply creating Power BI charts.
-
-The project required:
-
-- Understanding the ERP database structure
-- Identifying relevant data sources
-- Reverse-engineering required information across different areas
-- Developing SQL queries for data extraction
-- Understanding printing and packaging manufacturing processes
-- Translating manufacturing business logic into DAX
-- Creating dynamic KPI calculations
-- Handling machine-specific production logic
-- Analysing shift-level production performance
-- Connecting multiple operational dimensions
-- Designing a management-oriented analytical dashboard
-
-This required understanding both the technology and the manufacturing business process behind the data.
-
----
-
-## Manufacturing Environment
-
-The solution is designed for a large-scale printing and packaging manufacturing environment.
-
-The manufacturing setup includes 143 machines, including advanced technology-based machines sourced internationally.
-
-Some of these machines represent significant capital investments, with individual machine investments reaching approximately ₹15–25 crore.
-
-Monitoring the performance of such assets requires visibility into:
-
+- Overall Equipment Effectiveness (OEE)
 - Availability
 - Performance
 - Quality
-- Production
+- Production Quantity
 - Wastage
-- Machine utilization
-- Shift performance
-
-The OEE framework provides a structured way to analyse these factors.
+- Machine Performance
+- Production Hours
+- Make Ready (MR) Time
+- Non-Productive Hours
+- Production per Hour
+- Production per Shift
+- Department-wise Production
+- Day-wise OEE
 
 ---
 
-## OEE Metrics
+## Technology Stack
 
-The dashboard evaluates the three primary components of OEE:
+| Technology | Purpose |
+|---|---|
+| Power BI | Dashboard and Data Visualization |
+| DAX | OEE calculations and analytical measures |
+| MySQL | Production database |
+| SQL | Data extraction and transformation |
+| Power Query | Data preparation |
+| Excel | Data validation and supporting analysis |
+
+---
+
+## OEE Framework
+
+The project follows the standard OEE methodology:
+
+### OEE = Availability × Performance × Quality
 
 ### Availability
 
@@ -91,55 +54,108 @@ Measures how effectively available production time is utilized.
 
 ### Performance
 
-Measures production performance against the expected/rated production capability of the selected machine and production context.
+Measures actual production against planned production capacity.
 
 ### Quality
 
-Evaluates good production in relation to total production, considering production quality and wastage.
-
-### Overall Equipment Effectiveness
-
-OEE combines:
-
-**Availability × Performance × Quality**
-
-The calculations are implemented using DAX and dynamically respond to the selected analytical context.
+Measures good production against total production including wastage.
 
 ---
 
-## Dynamic Analysis
+## Dashboard Features
 
-The dashboard allows users to analyse manufacturing performance across multiple dimensions, including:
+### 1. OEE Dashboard
 
-- Machine
-- Shift
-- Date
-- Operator
-- Material
-- Production
-- Wastage
+The main dashboard provides a high-level view of manufacturing performance.
 
-Changing the selected filters dynamically recalculates the relevant KPIs and visualizations.
+![OEE Dashboard](DASHBOARD%20WITHOUT%20BLANK%20FEATURE.jpeg)
+
+### 2. Day-wise OEE Analysis
+
+Tracks OEE performance across production dates.
+
+![Day Wise OEE](DAY%20WISE%20OEE.jpeg)
+
+### 3. Department-wise Production
+
+Provides department-level production analysis.
+
+![Department Wise Production](DEPARTMENT%20WISE%20ACTUAL%20PRODUCTION.jpeg)
+
+### 4. OEE Dashboard Analysis
+
+Additional dashboard view showing detailed production and OEE analysis.
+
+![OEE Dashboard Analysis](DAY%20WISE%20OEE%20PART%20-%202.jpeg)
 
 ---
 
-## Data Flow
+## Key KPIs
+
+The Power BI solution includes measures for:
+
+- OEE %
+- Availability %
+- Performance %
+- Quality %
+- Production Quantity
+- Good Quantity
+- Wastage Quantity
+- Actual Run Time
+- Productive Hours
+- Make Ready Hours
+- Non-Productive Hours
+- Average Make Ready Time
+- Average Production per Hour
+- Production per Shift
+- Available Shifts
+- Planned Production Quantity
+
+---
+
+## Data Model
+
+The Power BI data model was designed around production, machine, shift and operational data.
+
+Detailed documentation is available here:
+
+[View Data Model](Data_Model.md)
+
+---
+
+## SQL Data Extraction
+
+Production data is extracted from MySQL using SQL queries.
+
+The SQL layer includes production, machine, shift, order and operational information required for OEE analysis.
+
+[View SQL Queries](SQL_Queries.md)
+
+---
+
+## DAX Measures
+
+The Power BI analytical layer contains custom DAX measures for calculating OEE components, production KPIs, availability, performance, quality and loss analysis.
+
+[View DAX Measures](DAX_Measures.md)
+
+---
+
+## Manufacturing Analytics Workflow
 
 ```text
-ERP
-  ↓
-MySQL Database
-  ↓
-SQL Queries
-  ↓
-Data Preparation
-  ↓
-Power BI Data Model
-  ↓
-DAX Business Logic
-  ↓
-OEE Calculations
-  ↓
-Interactive Dashboard
-  ↓
-Manufacturing Insights
+MySQL Production Database
+          ↓
+     SQL Queries
+          ↓
+    Data Preparation
+          ↓
+       Power BI
+          ↓
+      DAX Measures
+          ↓
+   OEE Calculations
+          ↓
+Manufacturing Dashboard
+          ↓
+Management Insights
