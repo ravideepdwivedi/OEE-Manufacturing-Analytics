@@ -159,3 +159,56 @@ MySQL Production Database
 Manufacturing Dashboard
           ↓
 Management Insights
+
+
+
+
+
+
+
+
+
+---
+
+## Project Structure
+
+| File | Description |
+|------|-------------|
+| `README.md` | Project overview, objectives and technology stack |
+| `SQL_Queries.md` | SQL queries used for data extraction and analysis |
+| `DAX_Measures.md` | DAX measures used in the Power BI dashboard |
+| `Data_Model.md` | Power BI data model and relationships |
+| `Key_Insights.md` | Business and operational insights derived from the dashboard |
+| `DAY WISE OEE.jpeg` | Day-wise OEE dashboard |
+| `DAY WISE OEE PART - 2.jpeg` | Additional day-wise OEE analysis |
+| `DEPARTMENT WISE ACTUAL PRODUCTION.jpeg` | Department-wise production analysis |
+| `DASHBOARD WITH BLANK FEATURE.jpeg` | OEE dashboard view |
+| `DASHBOARD WITHOUT BLANK FEATURE.jpeg` | OEE dashboard view with improved filtering |
+
+---
+
+## Tools & Technologies
+
+- Power BI
+- DAX
+- MySQL
+- SQL
+- Advanced Excel
+- Data Analysis
+- Manufacturing Analytics
+
+---
+
+## Key Business Areas
+
+- Overall Equipment Effectiveness (OEE)
+- Machine Performance
+- Production Monitoring
+- Availability Analysis
+- Performance Analysis
+- Quality Analysis
+- Wastage Monitoring
+- Downtime Analysis
+- Production Efficiency
+- Shift-wise Analysis
+- Department-wise Analysis
