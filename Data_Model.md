@@ -4,7 +4,7 @@
 
 The Power BI data model was designed to support OEE, production performance, machine analysis, availability, performance and quality monitoring.
 
-![Power BI Data Model](./DATA_MODEL.png)
+<img width="1600" height="844" alt="DATA_MODEL" src="https://github.com/user-attachments/assets/727715d5-c1aa-4105-beee-741935ec1de2" />
 
 ## Key Components
 
