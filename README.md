@@ -212,3 +212,27 @@ Management Insights
 - Production Efficiency
 - Shift-wise Analysis
 - Department-wise Analysis
+
+
+
+
+
+
+
+---
+
+## Dashboard Preview
+
+### OEE Dashboard
+
+![OEE Dashboard](DASHBOARD%20WITHOUT%20BLANK%20FEATURE.jpeg)
+
+### Daily OEE Analysis
+
+![Daily OEE Analysis](DAY%20WISE%20OEE.jpeg)
+
+### Department-wise Production Analysis
+
+![Department-wise Production](DEPARTMENT%20WISE%20ACTUAL%20PRODUCTION.jpeg)
+
+---
