@@ -2,91 +2,109 @@
 
 ## OEE Analysis
 
-The dashboard was developed to monitor Overall Equipment Effectiveness (OEE) across machines, shifts and production dates.
-
-### Key KPIs
+The dashboard provides a consolidated view of Overall Equipment Effectiveness (OEE) by combining:
 
 - Availability
 - Performance
 - Quality
-- OEE
-- Actual Production
-- Production Hours
-- Make Ready Time
-- Non-Productive Hours
-- Wastage
-- Production per Hour
 
-## Machine-Level Analysis
+This helps identify the major factors affecting overall equipment efficiency.
 
-The dashboard enables identification of:
+---
 
+## Machine-Level Insights
+
+Machine-level analysis helps identify:
+
+- High-performing machines
 - Low-performing machines
-- Production bottlenecks
-- Availability losses
-- Performance losses
-- Quality losses
-- Machine-wise production efficiency
+- Machines with lower availability
+- Machines contributing to production losses
+- Machines requiring operational attention
+
+This allows production teams to focus improvement efforts on specific equipment rather than evaluating the entire plant at once.
+
+---
+
+## Production Insights
+
+The dashboard analyzes production performance using:
+
+- Actual Production Quantity
+- Production per Hour
+- Production per Shift
+- Production Hours
+- Machine-wise Production
+- Department-wise Production
+
+These metrics help evaluate production efficiency and identify differences between machines, shifts and departments.
+
+---
+
+## Downtime & Non-Productive Hours
+
+Non-productive time is analyzed to identify production losses caused by activities such as:
+
+- Machine downtime
+- Make Ready (MR) time
+- Other non-productive hours
+
+Reducing these losses can improve machine utilization and overall production efficiency.
+
+---
+
+## Wastage Analysis
+
+Wastage quantity is monitored to identify quality and production losses.
+
+Higher wastage can indicate potential issues related to:
+
+- Machine performance
+- Production processes
+- Material handling
+- Operational efficiency
+
+Monitoring wastage alongside production helps identify opportunities for improvement.
+
+---
 
 ## Shift-Level Analysis
 
-Shift-wise analysis helps compare production performance and machine utilization across different shifts.
+Shift-wise analysis helps compare production performance across different operating shifts.
 
-This allows production teams to identify:
+Key metrics include:
 
-- Productivity differences between shifts
-- Under-utilized production time
-- Shift-level production losses
-- Opportunities for improving machine utilization
+- Production Quantity
+- Production Hours
+- Production per Hour
+- OEE
+- Wastage
+- Non-Productive Hours
+
+This provides visibility into variations in performance between shifts.
+
+---
 
 ## Department-Level Analysis
 
-Department-wise production analysis provides visibility into production performance across different manufacturing areas.
+Department-wise production analysis helps management understand:
 
-It helps management identify:
-
-- High-performing departments
-- Under-performing departments
+- Production contribution by department
+- Differences in production efficiency
 - Production bottlenecks
 - Areas requiring operational improvement
 
-## Production Analysis
+---
 
-The dashboard provides analysis of actual production quantity, production hours, production per hour and wastage.
+## Business Value
 
-This helps evaluate production efficiency and identify areas where output can be improved without increasing available production time.
+The analytics solution converts raw manufacturing data into actionable information that can support:
 
-## Make Ready and Non-Productive Time
+- Production monitoring
+- Machine performance improvement
+- Downtime reduction
+- Wastage reduction
+- Capacity utilization
+- Operational decision-making
 
-Make Ready (MR) time and non-productive hours are monitored to understand production losses caused by setup and other non-production activities.
-
-Reducing unnecessary downtime and setup time can improve machine availability and overall OEE.
-
-## Business Impact
-
-The solution provides management and production teams with a centralized view of manufacturing performance.
-
-It supports:
-
-- Data-driven production monitoring
-- Machine performance analysis
-- OEE monitoring
-- Bottleneck identification
-- Production efficiency improvement
-- Reduction of production losses
-- Better operational decision-making
-
-## Technology Stack
-
-- Power BI
-- DAX
-- MySQL
-- SQL
-- Advanced Excel
-- Manufacturing ERP Data
-
-## Analytical Framework
-
-The project combines production data, machine information, shift information and calculated DAX measures to create an interactive manufacturing analytics solution.
-
-The dashboard enables users to move from high-level OEE monitoring to detailed machine, shift and department-level analysis.
+The dashboard provides management with a centralized view of manufacturing performance for faster and data-driven decision-making.
